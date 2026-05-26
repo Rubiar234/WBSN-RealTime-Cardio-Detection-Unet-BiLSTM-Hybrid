@@ -1,0 +1,155 @@
+============================================================
+REPRODUCIBILITY AND EXECUTION GUIDE
+============================================================
+
+Repository:
+https://github.com/Rubiar234/WBSN-RealTime-Cardio-Detection-Unet-BiLSTM-Hybrid.git
+
+This guide explains how to reproduce the experimental results
+reported in the manuscript.
+
+============================================================
+1. SYSTEM REQUIREMENTS
+============================================================
+
+Recommended Environment:
+- Python 3.10+
+- Google Colab or Jupyter Notebook
+- TensorFlow 2.x
+- GPU Runtime Recommended
+
+Required Python Libraries:
+- tensorflow
+- numpy
+- pandas
+- scipy
+- scikit-learn
+- matplotlib
+- imbalanced-learn
+- shap
+- lime
+
+Install required packages using:
+
+pip install tensorflow numpy pandas scipy scikit-learn matplotlib imbalanced-learn shap lime
+
+============================================================
+2. DOWNLOAD THE PROJECT FILES
+============================================================
+
+Step 1:
+Open the repository:
+
+https://github.com/Rubiar234/WBSN-RealTime-Cardio-Detection-Unet-BiLSTM-Hybrid.git
+
+Step 2:
+Download the following items from the repository:
+
+1. main_2.ipynb
+2. Samples folder
+
+============================================================
+3. UPLOAD FILES TO GOOGLE DRIVE
+============================================================
+
+Step 1:
+Open Google Drive.
+
+Step 2:
+Upload:
+- main_2.ipynb
+- Samples folder
+
+Make sure both files are uploaded completely.
+
+============================================================
+4. OPEN THE NOTEBOOK
+============================================================
+
+Step 1:
+Open Google Colab.
+
+Step 2:
+Open the uploaded file:
+main_2.ipynb
+
+============================================================
+5. MOUNT GOOGLE DRIVE
+============================================================
+
+Run the first notebook cell to mount Google Drive.
+
+After running the cell, authorize Google Drive access.
+
+============================================================
+6. UPDATE DATASET PATHS
+============================================================
+
+Inside main_2.ipynb:
+
+Step 1:
+Locate Line 44.
+
+Enter the correct path of the uploaded Samples folder.
+
+Example:
+
+sample_path = '/content/drive/MyDrive/Samples'
+
+------------------------------------------------------------
+
+Step 2:
+Locate Lines 50 and 54.
+
+Update the correct dataset file path:
+
+'Samples/part_1.mat'
+
+Example:
+
+'/content/drive/MyDrive/Samples/part_1.mat'
+
+Ensure both lines contain the correct dataset path.
+
+============================================================
+7. RUN THE NOTEBOOK
+============================================================
+
+After updating all required paths:
+
+Step 1:
+Run the remaining notebook cells sequentially.
+
+Step 2:
+The notebook will automatically:
+- Load the dataset
+- Perform preprocessing
+- Train the proposed model
+- Evaluate performance
+- Generate results and metrics
+
+============================================================
+8. REPRODUCIBILITY NOTES
+============================================================
+
+- Use the same dataset files provided in the Samples folder.
+- Ensure all required Python libraries are installed.
+- GPU runtime is recommended for faster execution.
+- Results may vary slightly depending on hardware and TensorFlow version.
+
+============================================================
+9. OUTPUT
+============================================================
+
+The notebook generates:
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion matrix
+- Training plots
+- Model evaluation results
+
+============================================================
+END OF GUIDE
+============================================================
