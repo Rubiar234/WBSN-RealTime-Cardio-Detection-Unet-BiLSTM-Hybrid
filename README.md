@@ -413,5 +413,3 @@ pred_rr_labels = (pred_rr > 16).astype(int)
 > ⚠️ Results may vary slightly depending on hardware, GPU driver, and TensorFlow/PyTorch version due to floating-point non-determinism in CUDA operations. Core trends and rankings will remain consistent.
 
 ---
-
-*This repository is maintained for academic reproducibility purposes.*
